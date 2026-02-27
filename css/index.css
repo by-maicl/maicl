@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 150px;
+}
+
+.header__nickname {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.header__menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.header__menu-lang {
+    padding: 5px;
+    background-color: rgb(192, 192, 192);
+}
+
+.header__menu-change-lang {
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+}
+
+.header__menu-lang:hover .header__menu-change-lang {
+    display: block;
+}
+
+.about__container {
+    padding: 50px 250px;
+}
+
+.about__title {
+    border-bottom: 2px solid black;
+    width: fit-content;
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.about__text {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.about__tech-title {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.about__tech {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 5px;
+    margin-left: 35px;
+}
+
+.projects__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.projects__element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: rgb(219, 219, 219);
+    padding: 120px 100px;
+    border: 1px solid white;
+}
+
+.projects__element:hover {
+    background-color: rgb(192, 192, 192);
+    transition: all 0.3s ease-in-out;
+}
+
+.projects__company-logo {
+    width: 50px;
+}
+
+.projects__company-name {
+    font-weight: 500;
+}
