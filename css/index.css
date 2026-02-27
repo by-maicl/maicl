@@ -44,7 +44,7 @@ header {
 }
 
 .about__container {
-    padding: 50px 250px;
+    padding: 100px 250px;
 }
 
 .about__title {
@@ -80,13 +80,14 @@ header {
 }
 
 .projects__element {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
     background-color: rgb(219, 219, 219);
     padding: 120px 100px;
-    border: 1px solid white;
+    border: 2px solid white;
 }
 
 .projects__element:hover {
@@ -99,5 +100,21 @@ header {
 }
 
 .projects__company-name {
+    font-size: 28px;
     font-weight: 500;
+}
+
+.projects__more-info {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.projects__btn {
+    background: rgb(192, 192, 192);
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
 }
