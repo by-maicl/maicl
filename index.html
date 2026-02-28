@@ -27,7 +27,8 @@
       <div class="about__container">
         <h2 class="about__title">Про мене</h2>
         <p class="about__text">
-          Вітаю, мене звати Михайло. Я проживаю в Україні, в місті Київ. Займаюсь розробкою веб-сайтів вже протягом 3-х
+          Вітаю, мене звати Михайло. Я проживаю в Україні, в місті Київ. Займаюсь розробкою веб-сайтів вже протягом
+          3-х
           років. За цей час накопичив певну
           кількість робіт, з якими можна детально ознайомитись нижче.
         </p>
@@ -41,30 +42,72 @@
     </section>
 
     <section class="projects">
-      <div class="projects__container">
-        <div class="projects__element">
-          <img src="assets/companies/modular_houses.png" class="projects__company-logo">
-          <h1 class="projects__company-name">Modular houses</h1>
-          <div class="projects__more-info">
-            <span>Детальніше</span>
-            <button class="projects__btn">→</button>
-          </div>
-        </div>
-        <div class="projects__element">
-          <img src="assets/companies/marybraids.png" class="projects__company-logo">
-          <h1 class="projects__company-name">Mary Braids</h1>
-        </div>
-        <div class="projects__element">
-          <img src="assets/companies/weather_forecast.png" class="projects__company-logo">
-          <h1 class="projects__company-name">Weather forecast</h1>
-        </div>
-        <div class="projects__element">
-          <img src="assets/companies/olsem.png" class="projects__company-logo">
-          <h1 class="projects__company-name">Olsem</h1>
-        </div>
+      <div class="projects__container"></div>
+    </section>
+
+    <section class="project-modular">
+      <div class="project-modular__container">
+        <button id="closeModular"><img src="assets/icons/cross.png" alt="Close" class="project-modular__close"></button>
+        <h1 class="project-modular__title"></h1>
+        <img alt="Preview" class="project-modular__preview">
+        <h2 class="project-modular__info-title">Про компанію</h2>
+        <p class="project-modular__info"></p>
+        <a target="_blank" id="companyLink">
+          <button class="project-modular__btn">
+            Перейти на сайт
+            <img src="assets/icons/redirect.png" class="project-modular__btn-icon">
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="contact__container">
+        <h2 class="contact__title">Написати мені</h2>
+        <p class="contact__subtitle">Якщо вас зацікавила співпраця зі мною, заповніть форму нижче для зв'язку.
+          <br>Повідомлення
+          буде надіслано на мій email
+        </p>
+        <form class="contact__form">
+          <input type="text" placeholder="Ваше ім'я" class="contact__input">
+          <input type="email" placeholder="Ваш email" class="contact__input">
+          <textarea id="message" placeholder="Повідомлення..." class="contact__input contact__textarea"></textarea>
+          <button type="button" class="contact__btn">Надіслати</button>
+        </form>
       </div>
     </section>
   </main>
+
+  <footer>
+    <div>
+      <h1 class="footer__nickname">By maicl</h1>
+      <p>© Mykhailo Hrab</p>
+    </div>
+    <ul class="footer__list footer__list-menu">
+      <li class="footer__list-title">Основні посилання</li>
+      <li>Про мене</li>
+      <li>Проєкти</li>
+      <li>Контакти</li>
+    </ul>
+    <ul class="footer__list">
+      <li class="footer__list-title">Соцмережі</li>
+      <li>
+        <a href=""><i class="fa-brands fa-github footer__list-social"></i> GitHub</a>
+      </li>
+      <li>
+        <a href=""><i class="fa-brands fa-instagram footer__list-social"></i> Instagram</a>
+      </li>
+      <li>
+        <a href=""><i class="fa-brands fa-telegram footer__list-social"></i> Telegram</a>
+      </li>
+      <li>
+        <a href=""><i class="fa-brands fa-youtube footer__list-social"></i> Youtube</a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="https://kit.fontawesome.com/20e02f2fbf.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
